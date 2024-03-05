@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hospital Website</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		/* Add your CSS styles here */
+		/* Basic Styles */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		nav {
+			background-color: #333;
+			padding: 10px 0;
+		}
+
+		nav .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		nav .logo {
+			color: #fff;
+			margin: 0;
+		}
+
+		nav .nav-links {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav .nav-links li {
+			display: inline;
+			margin-right: 20px;
+		}
+
+		nav .nav-links li a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		.hero {
+			background-image: url('Photo/img/hero-bg.jpg');
+			background-size: cover;
+			background-position: center;
+			color: #fff;
+			text-align: center;
+			padding: 100px 0;
+		}
+
+		.about-content {
+			margin-bottom: 30px;
+		}
+
+		.about-heading {
+			color: #333;
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.about-text {
+			color: #666;
+			font-size: 16px;
+			line-height: 1.6;
+		}
+
+		.about-values {
+			list-style-type: none;
+			padding-left: 0;
+		}
+
+		.about-values li {
+			color: #666;
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+
+		.footer {
+			background-color: #ada9a3;
+			padding: 60px 0;
+			color: #495057;
+		}
+
+		.contact-info {
+			background-color: #ffffff;
+			border-radius: 5px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+		}
+
+		.contact-info ul {
+			padding: 0;
+		}
+
+		.contact-info li {
+			list-style: none;
+			margin-bottom: 10px;
+		}
+
+		.contact-info li:last-child {
+			margin-bottom: 0;
+		}
+
+		.dropdown-menu {
+			background-color: #fff;
+			/* Set background color to white */
+		}
+
+		.dropdown-menu a.dropdown-item {
+			color: #000;
+			/* Set text color to black */
+		}
+
+		.dropdown-menu.show {
+			display: block;
+			background-color: #fff;
+			/* Set background color to white */
+		}
+
+		.dropdown-menu.show a.dropdown-item {
+			color: #000;
+			/* Set text color to black */
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Hospital</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#doctors">Doctors</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+					<!-- Add Department link -->
+					<li class="nav-item">
+						<a class="nav-link" href="#departments">Departments</a>
+					</li>
+					<!-- Add About Us link -->
+					<li class="nav-item">
+						<a class="nav-link" href="#about-us">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index1.html">Official Login</a>
+					</li>
+				</ul>
+
+				<a href="login/patientLogin.jsp">
+					<button type="button" class="btn btn-outline-light">Login</button></a>
+
+			</div>
+		</div>
+	</nav>
+
+
+
+	<!-- Hero Section -->
+	<section class="hero text-white">
+		<div class="container">
+			<h1 class="display-4">Welcome to Cubeten Hospital</h1>
+			<p class="lead">Your health is our priority.</p>
+		</div>
+	</section>
+	
+	
+	<!-- About Us Section -->
+	<section id="about-us" class="section bg-light">
+		<div class="container">
+			<h2 class="text-center mb-5">About Us</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="about-content">
+						<h3 class="about-heading">Our Mission</h3>
+						<p class="about-text">To provide compassionate and high-quality healthcare services to our
+							community, focusing on patient-centered care, innovation, and continuous improvement.</p>
+					</div>
+					<div class="about-content">
+						<h3 class="about-heading">Our Vision</h3>
+						<p class="about-text">To be the leading healthcare provider in the region, recognized for
+							excellence in patient care, medical education, and research, while embracing diversity and
+							collaboration.</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="about-content">
+						<h3 class="about-heading">Our Values</h3>
+						<ul class="about-values">
+							<li>Compassion: We treat every patient with empathy, respect, and dignity, understanding
+								their unique needs and concerns.</li>
+							<li>Excellence: We strive for excellence in all aspects of our work, from clinical care to
+								customer service, always seeking to exceed expectations.</li>
+							<li>Teamwork: We foster a culture of collaboration and teamwork, recognizing that the best
+								outcomes are achieved through the collective efforts of our multidisciplinary team.</li>
+							<li>Integrity: We uphold the highest ethical standards in everything we do, earning the
+								trust and confidence of our patients, colleagues, and community.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Section -->
+	<section id="services" class="section">
+		<div class="container">
+			<h2 class="text-center mb-5">Our Services</h2>
+			<div class="row">
+				<!-- Service 1: Emergency Care -->
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img src="Photo/img/emergency.jpg" class="card-img-top" alt="Emergency Care Image">
+						<div class="card-body">
+							<h3 class="card-title">Emergency Care</h3>
+							<p class="card-text">Our emergency care services provide immediate medical attention to
+								patients suffering from severe injuries or life-threatening conditions. Our experienced
+								medical staff is available 24/7 to ensure timely and effective treatment, including
+								trauma care, cardiac emergencies, and acute illnesses.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Service 2: Vaccination -->
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img src="Photo/img/vaccine.jpg" class="card-img-top" alt="Vaccination Image">
+						<div class="card-body">
+							<h3 class="card-title">Vaccination</h3>
+							<p class="card-text">We offer a comprehensive vaccination program to protect individuals of
+								all ages from preventable diseases. Our vaccination services include routine
+								immunizations, flu shots, travel vaccines, and specialized vaccines for children,
+								adults, and seniors. Protect yourself and your loved ones with our vaccination services.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Service 3: Consultation -->
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img src="Photo/img/consult.png" class="card-img-top" alt="Consultation Image">
+						<div class="card-body">
+							<h3 class="card-title">Consultation</h3>
+							<p class="card-text">Our consultation services provide patients with personalized medical
+								advice and guidance for various health concerns. Whether you need advice on managing a
+								chronic condition, understanding treatment options, or seeking preventive care
+								recommendations, our healthcare professionals are here to listen, assess, and provide
+								expert guidance to support your health and well-being.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Add more services here -->
+			</div>
+		</div>
+	</section>
+
+	<!-- Doctors Section -->
+	<section id="doctors" class="section bg-light">
+		<div class="container">
+			<h2 class="text-center mb-5">Our Doctors</h2>
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img src="Photo/doctors/doctors-1.jpg" class="card-img-top" alt="Doctor Image">
+						<div class="card-body">
+							<h3 class="card-title">Dr. John Doe</h3>
+							<p class="card-text">Specialty: Cardiology</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img src="Photo/doctors/doctors-3.jpg" class="card-img-top" alt="Doctor Image">
+						<div class="card-body">
+							<h3 class="card-title">Dr. Jane Smith</h3>
+							<p class="card-text">Specialty: Pediatrics</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img src="Photo/doctors/doctors-4.jpg" class="card-img-top" alt="Doctor Image">
+						<div class="card-body">
+							<h3 class="card-title">Dr. Emily Johnson</h3>
+							<p class="card-text">Specialty: Gynecology</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img src="Photo/doctors/doctors-2.jpg" class="card-img-top" alt="Doctor Image">
+						<div class="card-body">
+							<h3 class="card-title">Dr. Maria Garcia</h3>
+							<p class="card-text">Specialty: Neurology</p>
+						</div>
+					</div>
+				</div>
+				<!-- Add more doctors here -->
+			</div>
+		</div>
+	</section>
+
+	<!-- Department Section -->
+	<section id="departments" class="section">
+		<div class="container">
+			<h2 class="text-center mb-5">Departments</h2>
+			<div class="row">
+				<!-- Department 1: Cardiology -->
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img src="Photo/department/departments-1.jpg" class="card-img-top" alt="Cardiology Image">
+						<div class="card-body">
+							<h3 class="card-title">Cardiology</h3>
+							<p class="card-text">Our cardiology department specializes in diagnosing and treating heart
+								diseases. Our team of cardiologists provides comprehensive cardiac care, including
+								preventive screenings, advanced diagnostics, and innovative treatments tailored to each
+								patient's needs.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Department 2: Pediatrics -->
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img src="Photo/department/departments-3.jpg" class="card-img-top" alt="Pediatrics Image">
+						<div class="card-body">
+							<h3 class="card-title">Pediatrics</h3>
+							<p class="card-text">Our pediatrics department offers specialized medical care for infants,
+								children, and adolescents. Our pediatricians are dedicated to promoting the health and
+								well-being of young patients through preventive care, routine check-ups, vaccinations,
+								and treatment of childhood illnesses.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Department 3: Gynecology -->
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img src="Photo/department/departments-4.jpg" class="card-img-top" alt="Gynecology Image">
+						<div class="card-body">
+							<h3 class="card-title">Gynaecology</h3>
+							<p class="card-text">Our gynaecology department provides comprehensive healthcare services
+								for women of all ages. Our experienced gynecologists offer preventive screenings, family
+								planning services, prenatal care, and treatment for gynecological conditions to support
+								women's health and wellness.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Department 4: Ophthalmology -->
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img src="Photo/department/departments-5.jpg" class="card-img-top" alt="Ophthalmology Image">
+						<div class="card-body">
+							<h3 class="card-title">Ophthalmology</h3>
+							<p class="card-text">Our ophthalmology department specializes in eye care and vision health.
+								Our team of ophthalmologists provides comprehensive eye examinations, diagnosis and
+								treatment of eye diseases, corrective eye surgeries, and vision correction services to
+								enhance and preserve your vision.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Department 5: Neurology -->
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img src="Photo/department/departments-2.jpg" class="card-img-top" alt="Ophthalmology Image">
+						<div class="card-body">
+							<h3 class="card-title">Neurology</h3>
+							<p class="card-text">Our Neurology department specializes in eye care and vision health.
+								Our team of neurologists provides comprehensive brain examinations, diagnosis and
+								treatment of brain diseases, corrective brain surgeries, and spinal correction services to
+								enhance and preserve your thinking power.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Add more departments here -->
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Gallery Section -->
+	<section id="gallery" class="section bg-light">
+		<div class="container">
+			<h2 class="text-center mb-5">Gallery</h2>
+			<div class="row">
+				<!-- Gallery Images -->
+				<div class="col-md-4 mb-4">
+					<img src="Photo/gallery/gallery-1.jpg" class="img-fluid" alt="Gallery Image 1">
+				</div>
+				<div class="col-md-4 mb-4">
+					<img src="Photo/gallery/gallery-2.jpg" class="img-fluid" alt="Gallery Image 2">
+				</div>
+				<div class="col-md-4 mb-4">
+					<img src="Photo/gallery/gallery-3.jpg" class="img-fluid" alt="Gallery Image 3">
+				</div>
+				<!-- Add more gallery images here -->
+				<div class="col-md-4 mb-4">
+					<img src="Photo/gallery/gallery-4.jpg" class="img-fluid" alt="Gallery Image 4">
+				</div>
+				<div class="col-md-4 mb-4">
+					<img src="Photo/gallery/gallery-5.jpg" class="img-fluid" alt="Gallery Image 5">
+				</div>
+				<div class="col-md-4 mb-4">
+					<img src="Photo/gallery/gallery-6.jpg" class="img-fluid" alt="Gallery Image 6">
+				</div>
+				<div class="col-md-4 mb-4">
+					<img src="Photo/gallery/gallery-7.jpg" class="img-fluid" alt="Gallery Image 7">
+				</div>
+				<div class="col-md-4 mb-4">
+					<img src="Photo/gallery/gallery-8.jpg" class="img-fluid" alt="Gallery Image 7">
+				</div>
+				<!-- Add more gallery images here -->
+			</div>
+		</div>
+	</section>
+
+	<!-- Appointment Section -->
+
+
+
+	<!-- Map Section -->
+	<section id="map" class="section">
+		<div class="container">
+			<h2 class="text-center mb-5">Hospital Location</h2>
+			<!-- Embed Google Maps -->
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15607.309307330867!2d-74.00661045656443!3d40.71272835071847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAwJzMxLjYiTiA3NMKwMDcnMDUuMCJX!5e0!3m2!1sen!2sus!4v1644567510675!5m2!1sen!2sus"
+				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+	</section>
+
+	<hr>
+
+	<!-- Contact Section -->
+	<footer id="contact" class="footer">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-4 mx-auto">
+					<h2 class="text-center mb-4">Quick Links</h2>
+					<div class="contact-info">
+						<ul class="list-unstyled text-center">
+							<li class="nav-item">
+						<a class="nav-link" href="#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#doctors">Doctors</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+					<!-- Add Department link -->
+					<li class="nav-item">
+						<a class="nav-link" href="#departments">Departments</a>
+					</li>
+					<!-- Add About Us link -->
+					<li class="nav-item">
+						<a class="nav-link" href="#about-us">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index1.html">Official Login</a>
+					</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col-md-4 mx-auto">
+					<h2 class="text-center mb-4">Contact Us</h2>
+					<div class="contact-info">
+						<p class="text-center mb-2">For inquiries, please contact us at:</p>
+						<ul class="list-unstyled text-center">
+							<li>123 Hospital Street</li>
+							<li>City, Country</li>
+							<li>Phone: 123-456-7890</li>
+							<li>Email: info@hospital.com</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col-md-4 mx-auto">
+					<h2 class="text-center mb-4">Website Made By</h2>
+					<div class="contact-info">
+						<p class="text-center mb-2">Cubeten Enterprises Interns :</p>
+						<ul class="list-unstyled text-center">
+							<li>Jeslin Konthoujam</li>
+							<li>Rico Jojo</li>
+							<li>Akter Khutheibam</li>
+							<li>Altab Basemayum</li>
+							<li>Ajim Khan</li>
+							<li>Munir Kan</li>
+							<li>Wajeeb Kan</li>
+						</ul>
+					</div>
+				</div>
+				
+				<p class="text-center">
+			<a href="index.html">Home Page</a>
+			<br>
+			&copy;
+			<script>
+				document.write(new Date().getFullYear());
+			</script>
+			Hospital Management System. All rights reserved.
+		</p>
+				
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+		integrity="sha384-hd5bL9QrkDOzTfFxnPkCotudXvGgdIsw/v/ji+4W5g8wkMU+Vn2x9YXu8jQBcQPy"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+		integrity="sha384-Ky5Y3q3uM3T3uoOe0wGtjpJgfVz6yv/gv1prI7RYmbdRojnKX4BqfP5R0tNpgEGG"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

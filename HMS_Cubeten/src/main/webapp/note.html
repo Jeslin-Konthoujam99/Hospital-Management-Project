@@ -1,0 +1,16 @@
+	<%@ page import="java.sql.*" %>
+	<%@ page import="login.SQLConnect" %>
+		connect
+		SQLConnect connection = new SQLConnect();
+		con = connection.connect();
+
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		out.println("<br><br><br><p class='fs-1 fst-italic bg-danger text-center'> booked successfully .</p>");
+		RequestDispatcher rd = request.getRequestDispatcher("patient/book_appointments.jsp");
+		rd.include(request, response);
+		
+${pageContext.request.contextPath}
+/IpdAppointment1
+
+		
